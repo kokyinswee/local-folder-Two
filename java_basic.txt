@@ -1,0 +1,24 @@
+
+package newstudent;
+
+
+interface School {
+    public void studying();
+    public void reading();
+}
+public class NewStudent implements School{
+    public void studying(){
+        System.out.println("Study of All Lesson");
+    }
+    
+    public void reading(){
+        System.out.println("Reading All Lesson");
+    }
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        School s = new NewStudent();
+        s.studying();
+        s.reading();
+    }
+}
